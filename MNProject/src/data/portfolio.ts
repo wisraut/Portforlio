@@ -8,7 +8,7 @@ export const PORTFOLIO = {
   location: "Bangkok, Thailand",
   email: "wisrutyaemprayur@gmail.com",
   website: "https://www.instagram.com/ur4avf0lk/",
-  github: "https://github.com/yourname",
+  github: "https://github.com/wisraut",
 
   highlights: [
     { label: "React + TS", value: "3+ yrs" },
