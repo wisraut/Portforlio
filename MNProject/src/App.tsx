@@ -1,10 +1,17 @@
-import { useState } from "react";
-
-import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import Navigation from "./components/Navigation";
+import Home from "./page/Home";
+import Profile from "./page/Profile";
 
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline text-blue-600">Hello world!</h1>
+    <div className="min-h-screen bg-slate-950">
+      <Navigation />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/profile" element={<Profile />} />
+      </Routes>
+    </div>
   );
 }
 
