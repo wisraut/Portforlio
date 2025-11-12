@@ -58,22 +58,22 @@ export default function Profile() {
             </div>
             <Flex ml="auto" gap="3" wrap="wrap">
               {PROFILE.email && (
-                <RLink href={`mailto:${PROFILE.email}`} underline>
+                <RLink href={`mailto:${PROFILE.email}`} underline="always">
                   Email
                 </RLink>
               )}
               {PROFILE.website && (
-                <RLink href={PROFILE.website} underline>
+                <RLink href={PROFILE.website} underline="always">
                   Website
                 </RLink>
               )}
               {PROFILE.github && (
-                <RLink href={PROFILE.github} underline>
+                <RLink href={PROFILE.github} underline="always">
                   GitHub
                 </RLink>
               )}
               {PROFILE.linkedin && (
-                <RLink href={PROFILE.linkedin} underline>
+                <RLink href={PROFILE.linkedin} underline="always">
                   LinkedIn
                 </RLink>
               )}
@@ -105,7 +105,7 @@ export default function Profile() {
           <Grid columns={{ initial: "1", md: "2" }} gap="4">
             <InfoRow label="อีเมล">
               {PROFILE.email ? (
-                <RLink href={`mailto:${PROFILE.email}`} underline>
+                <RLink href={`mailto:${PROFILE.email}`} underline="always">
                   {PROFILE.email}
                 </RLink>
               ) : (
@@ -114,7 +114,7 @@ export default function Profile() {
             </InfoRow>
             <InfoRow label="เว็บไซต์">
               {PROFILE.website ? (
-                <RLink href={PROFILE.website} underline>
+                <RLink href={PROFILE.website} underline="always">
                   {PROFILE.website}
                 </RLink>
               ) : (

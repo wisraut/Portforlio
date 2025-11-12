@@ -53,17 +53,6 @@ export default function Home() {
                   </a>
                 </Button>
               )}
-              {P.linkedin && (
-                <Button asChild variant="soft">
-                  <a
-                    href={P.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    LinkedIn
-                  </a>
-                </Button>
-              )}
               {P.website && (
                 <Button asChild color="violet">
                   <a href={P.website} target="_blank" rel="noopener noreferrer">
@@ -161,7 +150,7 @@ export default function Home() {
         {P.email && (
           <Text>
             ติดต่อ:{" "}
-            <RLink href={`mailto:${P.email}`} underline>
+            <RLink href={`mailto:${P.email}`} underline="always">
               {P.email}
             </RLink>
           </Text>
